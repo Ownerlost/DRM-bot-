@@ -18,11 +18,11 @@ class Config(object):
     DOWNLOAD_LOCATION = "./DOWNLOADS"
     SESSIONS = "./SESSIONS"
 
-    AUTH_USERS = os.environ.get('AUTH_USERS', '7195956323,5610457536').split(',')
+    AUTH_USERS = os.environ.get('AUTH_USERS', '7195956323,1343380240,5610457536').split(',')
     for i in range(len(AUTH_USERS)):
         AUTH_USERS[i] = int(AUTH_USERS[i])
 
-    GROUPS = os.environ.get('GROUPS', '-1002123112478').split(',')
+    GROUPS = os.environ.get('GROUPS', '-1002123112478,-4289550908').split(',')
     for i in range(len(GROUPS)):
         GROUPS[i] = int(GROUPS[i])
 
